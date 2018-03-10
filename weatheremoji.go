@@ -18,11 +18,11 @@ func EmojiRequest(key string, lat string, long string) string {
 	}
 
 	Emoji := ""
-
 	switch forecast.Currently.Icon {
 	case "clear-day":
 		Emoji = "☀️"
 	case "partly-cloudy-day":
+		Emoji = "🌤️"
 	case "partly-cloudy-night":
 		Emoji = "🌤️"
 	case "cloudy":

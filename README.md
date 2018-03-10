@@ -1,5 +1,15 @@
 # weather-emoji
+Go library to pull the weather forecast as an emoji
 
-i'll make a readme at some point
+##usage:
+import that ish:
+`import "github.com/bradp/weatheremoji"`
 
-for now, this is hopefully a library for Go to pull the weather forecast from Darksky as an emoji
+use that ish (ya need a [Dark Sky API Key](https://darksky.net/dev):
+`weatheremoji.EmojiRequest("Yout Dark Sky API key", latitude [float64], longitude [float64] )`
+
+
+## todo:
+
+ - Make it not just convert the dark sky icon to an emoji
+ - use temp/forecast to figure out better emoji
