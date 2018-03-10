@@ -1,9 +1,13 @@
-package EmojiRequest
+package WeatherEmoji
 
 import (
 	"github.com/shawntoffel/darksky"
 	"log"
 )
+
+// WeatherEmoji does nothing
+func WeatherEmoji() {
+}
 
 // EmojiRequest requests an emoji for a location
 func EmojiRequest(key string, lat darksky.Measurement, long darksky.Measurement) string {
