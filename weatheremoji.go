@@ -10,7 +10,7 @@ func WeatherEmoji() {
 }
 
 // EmojiRequest requests an emoji for a location
-func EmojiRequest(key string, lat float64, long float64) string {
+func EmojiRequest(key string, lat string, long string) string {
 	client := darksky.NewClient(key)
 	forecast, err := client.GetForecast(lat, long, darksky.Defaults)
 	if err != nil {
