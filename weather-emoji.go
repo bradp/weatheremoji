@@ -5,7 +5,8 @@ import (
 	"log"
 )
 
-func main(key string, lat float, long float) {
+// EmojiRequest requests an emoji for a location
+func EmojiRequest(key string, lat float, long float) {
 	client := darksky.New(key)
 	request := darksky.ForecastRequest{}
 
