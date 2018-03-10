@@ -1,4 +1,4 @@
-package main
+package EmojiRequest
 
 import (
 	"github.com/shawntoffel/darksky"
@@ -6,7 +6,7 @@ import (
 )
 
 // EmojiRequest requests an emoji for a location
-func EmojiRequest(key string, lat float, long float) {
+func EmojiRequest(key string, lat darksky.Measurement, long darksky.Measurement) string {
 	client := darksky.New(key)
 	request := darksky.ForecastRequest{}
 
