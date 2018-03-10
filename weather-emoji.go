@@ -19,24 +19,28 @@ func main(key string, lat float, long float) {
 		log.Fatal("Forecast request error", err)
 	}
 
+	Emoji := ""
+
 	switch forecast.Currently.Icon {
 	case "clear-day":
-		return "☀️"
+		Emoji = "☀️"
 	case "partly-cloudy-day":
 	case "partly-cloudy-night":
-		return "🌤️"
+		Emoji = "🌤️"
 	case "cloudy":
-		return "☁️"
+		Emoji = "☁️"
 	case "rain":
-		return "🌧️"
+		Emoji = "🌧️"
 	case "snow":
 	case "sleet":
-		return "❄️"
+		Emoji = "❄️"
 	case "wind":
-		return "🌬️"
+		Emoji = "🌬️"
 	case "fog":
-		return "🌫️"
+		Emoji = "🌫️"
 	default:
-		return "☀️"
+		Emoji = "☀️"
 	}
+
+	return Emoji
 }
